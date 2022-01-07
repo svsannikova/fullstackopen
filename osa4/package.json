@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-	"lint": "eslint .",
-    "test": "jest --verbose"
+    "lint": "eslint .",
+    "test": "jest --verbose --runInBand"
   },
   "author": "Svetlana Sannikova",
   "license": "MIT",
@@ -20,12 +20,11 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "eslint": "^8.6.0",
     "eslint-plugin-react": "^7.28.0",
     "jest": "^27.4.7",
-    "nodemon": "^2.0.14"
-  },
-  "jest": {
-   "testEnvironment": "node"
+    "nodemon": "^2.0.14",
+    "supertest": "^6.1.6"
   }
 }
